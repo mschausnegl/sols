@@ -1,0 +1,442 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Page was not found" />
+    <meta name="keywords" content="404, not found, page not found" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0' />
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404 Not Found - solitairen.com - solitairen.com" />
+    <meta property="og:description" content="Page was not found">
+    <meta property="og:image" content="https://solitairen.com/img/solitairen-preview.webp">
+    <meta property="og:site_name" content="Solitairen">
+    <meta property="og:url" content="https://solitairen.com/">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Solitairen">
+    <meta name="mobile-web-app-title" content="Solitairen">
+    <meta name="application-name" content="Solitairen">
+
+    <title>404 Not Found - solitairen.com</title>
+
+
+    
+
+    <link rel="preload" fetchpriority="high" as="image" href="/img/solitaire-solitairen-logo.webp" type="image/webp">
+    <link rel="preload" as="font" type="font/woff" href="/fonts/font-awesome/font/fontawesome-webfont.woff?v=2" crossorigin />
+
+    <link rel="stylesheet" href="/rideordie/lib/bootstrap/dist/css/bootstrap.min.css?v=2" />
+    <link rel="stylesheet" href="/rideordie/css/site.css?v=7" />
+    <link rel="stylesheet" href="/rideordie/css/games.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="/rideordie/solitaire/css/jquery.mobile.min.css?v=11" />
+    <link rel="stylesheet" type="text/css" href="/rideordie/solitaire/css/style.min.css?v=7" />
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome/css/font-awesome.css?v=3" />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTMR7BRBWM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-VTMR7BRBWM');
+        </script>
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PVD92NZT');
+    </script>
+
+    
+    
+    
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <script>
+        var value = localStorage.getItem('color') || '#076D2B';
+        setCookie('color', '#076D2B', 365);
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+    </script>
+
+</head>
+<body id="gogo">
+    <header>
+        <nav id="specialNav"  class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3 solitairen-navbar">
+            <div class="">
+                <a class="navbar-brand" id="navBarBtnGoMain" title="Logo" onclick="clearStorage('klondike-1')" target="_top" href="/">
+                    <img fetchpriority="high" src="/img/solitaire-solitairen-logo.webp" width="175" height="25" class="img-fluid" alt="Solitairen Logo" />
+                </a>
+                <div class="d-sm-inline-flex navbarcontent-sol">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               id="solitaire"
+                               title="Solitaire"
+                               style="cursor: pointer;" href="/"
+                               target="_top"
+                               onclick="clearStorage('klondike-1')">Solitaire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="cursor: pointer;" title="Spider Solitaire" id="spider-solitaire" href="/spider-solitaire" target="_top" onclick="clearStorage('spider-1')">Spider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('freecell-freecell')" href="/freecell" target="_top" title="Freecell Solitaire" style="cursor: pointer;">Freecell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="/hearts" target="_top" title="Hearts" id="hearts" style="cursor: pointer;">Hearts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="/spades" target="_top" id="spades" title="Spades" style="cursor: pointer;">Spades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('pyramid-0')" href="/pyramid-solitaire" target="_top" title="Pyramid Solitaire" id="pyramid-solitaire" style="cursor: pointer;">Pyramid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="/tripeaks-solitaire" target="_top" id="tripeaks" title="Tripeaks Solitaire" style="cursor: pointer;">Tripeaks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('klondike-yukon')" href="/yukon-solitaire" target="_top" title="Yukon Solitaire" id="yukon-solitaire" style="cursor: pointer;">Yukon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('golf-golfeasy')" href="/golf-solitaire" target="_top" title="Golf Solitaire" id="golf-solitaire" style="cursor: pointer;">Golf</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="/mahjong" target="_top" id="mahjong" title="Mahjong" style="cursor: pointer;">Mahjong</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="/yahtzee" target="_top" id="yahtzee" title="Yahtzee" style="cursor: pointer;">Yahtzee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="https://solitaireee.com/" target="_blank" id="solitaireee" title="Solitaireee" style="cursor: pointer;">New Solitaire</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-all" id="dropbtn-sol">
+                                <a class="dropbtn-all2 nav-link text-dark" onclick="updateDropdown()" id="all-games" title="All Games" style="cursor: pointer;">All Games</a>
+                                <div class="dropdown-content-all" id="allgames-dropdown">
+                                    <div class="header nav-link text-dark">
+                                        <a class="nav-link text-dark" style="font-size: 11pt" title="Solitaire Turn 3" href="/solitaire-draw-3">Game of the day: Solitaire Turn 3</a>
+                                    </div>
+                                    <div class="row" id="dropdown-content-sol" style="margin-bottom: 10px;">
+                                        <div class="col-3">
+                                            <ul style="list-style: none">
+                                                <li><a class="nav-link text-dark" title="Solitaire" href="/">Solitaire</a></li>
+                                                <li><a class="nav-link text-dark" title="Solitaire Turn 3" href="/solitaire-draw-3">Solitaire Turn 3</a></li>
+                                                <li><a class="nav-link text-dark" title="Spider Solitaire" href="/spider-solitaire">Spider</a></li>
+                                                <li><a class="nav-link text-dark" title="Spider Solitaire 2 Suits" href="/spider-solitaire-2-suits">Spider 2 Suits</a></li>
+                                                <li><a class="nav-link text-dark" title="Spider Solitaire 4 Suits" href="/spider-solitaire-4-suits">Spider 4 Suits</a></li>
+                                                <li><a class="nav-link text-dark" title="Freecell" href="/freecell">Freecell</a></li>
+                                                <li><a class="nav-link text-dark" title="Frecell Twodecks" href="/freecell-twodecks">Frecell Twodecks</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul style="list-style: none">
+                                                <li><a class="nav-link text-dark" title="Pyramid Solitaire" href="/pyramid-solitaire">Pyramid</a></li>
+                                                <li><a class="nav-link text-dark" title="Yukon Solitaire" href="/yukon-solitaire">Yukon</a></li>
+                                                <li><a class="nav-link text-dark" title="Golf Solitaire" href="/golf-solitaire">Golf</a></li>
+                                                <li><a class="nav-link text-dark" title="Forty Thieves Solitaire" href="/fortythieves-solitaire">Forty Thieves</a></li>
+                                                <li><a class="nav-link text-dark" title="Tripeaks Solitaire" href="/tripeaks-solitaire">Tripeaks</a></li>
+                                                <li><a class="nav-link text-dark" title="Diplomat Solitaire" href="/diplomat-solitaire">Diplomat</a></li>
+                                                <li><a class="nav-link text-dark" title="Flower Garden Solitaire" href="/flowergarden-solitaire">Flower Garden</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul style="list-style: none">
+                                                <li><a class="nav-link text-dark" title="Scorpion Solitaire" href="/scorpion-solitaire">Scorpion</a></li>
+                                                <li><a class="nav-link text-dark" title="Eightoff Solitaire" href="/eightoff-solitaire">Eightoff</a></li>
+                                                <li><a class="nav-link text-dark" title="Bakers Solitaire" href="/bakers-solitaire">Bakers</a></li>
+                                                <li><a class="nav-link text-dark" title="Simple Simon Solitaire" href="/simplesimon-solitaire">Simple Simon</a></li>
+                                                <li><a class="nav-link text-dark" title="Easthaven Solitaire" href="/easthaven-solitaire">Easthaven</a></li>
+                                                <li><a class="nav-link text-dark" title="Klondike Solitaire" href="/klondike-solitaire">Klondike Solitaire</a></li>
+                                                <li><a class="nav-link text-dark" title="Klondike Solitaire Turn 3" href="/klondike-turn-3">Klondike Turn 3</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+                                            <ul style="list-style: none">
+                                                <li><a class="nav-link text-dark" title="Yahtzee" href="/yahtzee">Yahtzee</a></li>
+                                                <li><a class="nav-link text-dark" title="Mahjong" href="/mahjong">Mahjong</a></li>
+                                                <li><a class="nav-link text-dark" title="Hearts" href="/hearts">Hearts </a></li>
+                                                <li><a class="nav-link text-dark" title="Spades" href="/spades">Spades</a></li>
+                                                <li><a class="nav-link text-dark" title="Chess" href="/chess">Chess</a></li>
+                                                <li><a class="nav-link text-dark" title="Minesweeper Puzzle Game" href="/minesweeper">Minesweeper</a></li>
+                                                <li>
+                                                    <a class="nav-link text-dark" title="Leaderboard" href="/leaderboard"><i>Leaderboard</i></a>
+                                                </li>
+                                                <li><a class="nav-link text-dark" onclick="clearStorage('')" href="/games" target="_top" title="All Games">Search Games</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" onclick="clearStorage('')" href="/Identity/Account/Login" target="_top" id="Login" title="Login" style="cursor: pointer;">Login</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="topnav">
+    <a class="navbar-brand mobile-width-header" id="navBarBtnGo" onclick="clearStorage('klondike-1')" href="https://solitairen.com">
+        <img fetchpriority="high" src="/img/solitaire-solitairen-logo.webp" width="175" height="25" alt="Solitairen Logo Mobile" />
+    </a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                   id="solitaire-mobile"
+                   title="solitaire"
+                   style="cursor: pointer;" href="https://solitairen.com"
+                   target="_top"
+                   onclick="clearStorage('klondike-1')">Solitaire</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" style="cursor: pointer;" title="spider" id="spider-solitaire-mobile" href="/spider-solitaire" target="_top" onclick="clearStorage('spider-1')">Spider</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Freecell" onclick="clearStorage('freecell-freecell')" href="/freecell" target="_top" style="cursor: pointer;">Freecell</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Hearts" onclick="clearStorage('')" href="/hearts" target="_top" id="hearts-mobile" style="cursor: pointer;">Hearts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Spades" onclick="clearStorage('')" href="/spades" target="_top" id="spades-mobile" style="cursor: pointer;">Spades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Pyramid" onclick="clearStorage('pyramid-0')" href="/pyramid-solitaire" target="_top" id="pyramid-solitaire-mobile" style="cursor: pointer;">Pyramid</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Tripeaks-solitaire" onclick="clearStorage('')" href="/tripeaks-solitaire" target="_top" id="tripeaks-solitaire-mobile" style="cursor: pointer;">Tripeaks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Yukon-solitaire" onclick="clearStorage('klondike-yukon')" href="/yukon-solitaire" target="_top" id="yukon-solitaire-mobile" style="cursor: pointer;">Yukon</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Golf" onclick="clearStorage('golf-golfeasy')" href="/golf-solitaire" target="_top" id="golf-solitaire-mobile" style="cursor: pointer;">Golf</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Mahjong" onclick="clearStorage('')" href="/mahjong" target="_top" id="mahjong-mobile" style="cursor: pointer;">Mahjong</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" onclick="clearStorage('')" href="/yahtzee" target="_top" id="yahtzee-mobile" title="Yahtzee" style="cursor: pointer;">Yahtzee</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link text-dark" onclick="clearStorage('')" href="/minesweeper" target="_top" id="minesweeper-mobile" title="Minesweeper" style="cursor: pointer;">Minesweeper</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link text-dark" onclick="clearStorage('')" href="/games" target="_top" id="all-games-mobile" title="all games" style="cursor: pointer;">All Games</a>
+            </li>
+            <hr />
+                <li class="nav-item">
+                    <a class="nav-link text-dark" onclick="clearStorage('')" href="/Identity/Account/Login" target="_top" id="Loginn-Mobile" title="Logi" style="cursor: pointer;">Login</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" onclick="clearStorage('')" href="/Leaderboard" target="_top" id="Leadeboard" title="Leaderboard" style="cursor: pointer;">Leaderboard</a>
+            </li>
+        </ul>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <div href="javascript:void(0);" class="icon" onclick="mobileHeader()" style="margin-right: 10px">
+        Games
+    </div>
+</div>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVD92NZT"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            
+<div class="d-flex align-items-center justify-content-center vh-100">
+    <div class="text-center row">
+        <div class=" col-md-6">
+            <img src="https://cdn.pixabay.com/photo/2017/03/09/12/31/error-2129569__340.jpg" alt=""
+                 class="img-fluid">
+        </div>
+        <div class=" col-md-6 mt-5">
+            <p class="fs-3"> <span class="text-danger">Opps!</span> Page not found.</p>
+            <p class="lead">
+                The page you’re looking for doesn’t exist.
+            </p>
+            <a href="/" title="Home" alt="Home" class="btn btn-primary">Go Home</a>
+        </div>
+    </div>
+</div>
+
+            <div id='feedback-dialog-solitairen' hidden>
+                <div style="padding-top: 20px;">
+                    <h4>Thank you for choosing Solitairen!</h4>
+                </div>
+                <div>
+                    <h5>
+                        We will be happy, if we get some feedback from you how to improve our platform!
+                    </h5>
+                </div>
+                <div class="container" style="padding-bottom: 5px">
+                    <textarea id="text-submit" style="width: 90%" rows="3" cols="60" placeholder="Type your feedback here...">
+                        </textarea>
+                </div>
+                <div class='bottomButton-hint' style="width: 50%; margin: auto" onclick="submitFeedback()">Submit</div>
+                <div class='bottomButton' style="width: 50%; margin: auto;padding-bottom: 25px" onclick="closeFeedback()">Cancel</div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="solitairen-border">
+        <section class="footer-area">
+            <div class="footer-area container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-sm-3 pt-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">
+                                <a href="/Blog?page=1" onclick="clearStorage('')" target="_top" title="Blog" class="text-center">Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 pt-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">
+                                <a href="/Leaderboard" onclick="clearStorage('')" target="_top" title="Leaderboard" class="text-center">Leaderboard</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 pt-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">
+                                <a href="/Identity/Account/Manage" onclick="clearStorage('')" target="_top" title="Profile" class="text-center">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 pt-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">
+                                <a href="/pages/privacy-policy" title="Privacy" onclick="clearStorage('')" target="_top" class="text-center">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media pt-5" style="text-align: center;">
+                        <a href="https://www.facebook.com/solitairengames" target="_blank"><img src="/img/social-media/facebook.webp" loading="lazy" alt="Facebook Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a href="https://twitter.com/solitairengames" target="_blank"><img src="/img/social-media/twitter-x.webp" loading="lazy" alt="Twitter X Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a href="https://www.tiktok.com/@solitairengames" target="_blank"><img src="/img/social-media/tiktok.webp" loading="lazy" alt="TikTok Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a href="https://www.youtube.com/@solitairen" target="_blank"><img src="/img/social-media/youtube.webp" loading="lazy" alt="YouTube Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a aria-label="RSS" target="_blank" href="/Rss/Blog"><img src="/img/social-media/rss.webp" loading="lazy" alt="RSS Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a href="https://apps.microsoft.com/search/publisher?name=Solitairen&hl=en-us&gl=US" target="_blank"><img src="/img/social-media/microsoft-store-solitairen-logo.webp" loading="lazy" alt="Microsoft Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:119px; height:40px;" /></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.solitairen.solitaireonlinecardgames" target="_blank"><img src="/img/social-media/google-play-solitairen-logo.webp" loading="lazy" alt="Google Play Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:119px; height:40px;" /></a>
+                    </div>
+                    <div class="row spacing-top-40">
+                        <p>Copyrighted by <a href="https://solitairen.com" title="Home" target="_top">Solitairen</a> | All Rights Reserved</p>
+                    </div>
+                    <div class="row">
+                        <p>If you have any questions, please do not hestitate to contact us: <a title="contacts@solitairen.com" href="mailto:contacts@solitairen.com">contacts@solitairen.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </footer>
+
+            <script type="text/javascript">
+                Object.keys(localStorage).forEach(key => {
+                    if (key.toString().includes('solitairen') && !key.toString().includes("gameWinCount")) {
+                        localStorage.removeItem(key);
+                    }
+                });
+                global_game_name = "klondike-1";
+            </script>
+
+
+    <script src="/rideordie/lib/bootstrap/dist/js/bootstrap.js?v=1"></script>
+    <script type="text/javascript" src="/rideordie/js/coloris.js?v=1"></script>
+
+    <script src="/rideordie/js/solitairen.js?v=3"></script>
+    <script>
+        function updateDropdown() {
+            sendEventGtag('view-all-games');
+            if ($('.dropdown-content-all').css('display') === 'block') {
+                $('.dropdown-content-all').css('display', 'none');
+            } else {
+                $('.dropdown-content-all').css('display', 'block');
+            }
+        }
+
+        $(document).ready(function () {
+            setTimeout(() => {
+                $('#specialNav').removeAttr('hidden');
+            }, 120000);
+
+            $('a').click(function () {
+                window.onbeforeunload = null;
+            });
+
+            $('#draw3,#draw2,#draw4, #draw1').click(function () {
+                window.onbeforeunload = null;
+            });
+
+            $('.card-back-size').click(function () {
+                window.onbeforeunload = null;
+            });
+
+            $('#wrapper > div.game-container.ui-mobile-viewport.ui-overlay-a > div.ui-loader.ui-corner-all.ui-body-a.ui-loader-default')
+                .remove();
+
+            setInterval(() => {
+                sendEventGtag('gam_ad_served');
+            }, 30000);
+        });
+
+        function submitFeedback() {
+            $.post("Feedback", {
+                text: $('#text-submit').val()
+            })
+            localStorage.setItem('feedback', 1);
+            $('#feedback-dialog-solitairen').attr("hidden", true);
+        }
+
+        function closeFeedback() {
+            $('#feedback-dialog-solitairen').attr("hidden", true);
+            localStorage.setItem('feedback', 0);
+            sendEventGtag('cancel-feedback');
+        }
+    </script>
+    <script>
+        function clearStorage(id) {
+
+            Object.keys(localStorage).forEach(key => {
+                if (key.toString().includes('solitairen') && !key.toString().includes("gameWinCount")) {
+                    localStorage.removeItem(key);
+                }
+            });
+            global_game_name = id;
+        }
+
+        function mobileHeader() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    
+</body>
+</html>

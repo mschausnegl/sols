@@ -1,0 +1,1466 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from solitairen.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 00:20:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Play Solitaire Online For Free. You can play Klondike Solitaire, FreeCell, Spider Solitaire, Hearts, Spades and many more games." />
+    <meta name="keywords" content="solitaire, solitaire free, solitaire games, solitaire free online, play solitaire free online, klondike solitaire, klondike solitaire turn one, solitaire card games, solitaire green felt, solitaire online" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0' />
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Solitaire Free &amp; Online - solitairen.com - solitairen.com" />
+    <meta property="og:description" content="Play Solitaire Free Online Games. You can play Klondike Solitaire, FreeCell, Spider Solitaire, Hearts, Spades and many more games.">
+    <meta property="og:image" content="img/solitairen-preview.webp">
+    <meta property="og:site_name" content="Solitairen">
+    <meta property="og:url" content="index.html">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Solitairen">
+    <meta name="mobile-web-app-title" content="Solitairen">
+    <meta name="application-name" content="Solitairen">
+
+    <title>Solitaire Free &amp; Online - solitairen.com</title>
+
+
+    
+
+    <link rel="preload" fetchpriority="high" as="image" href="img/solitaire-solitairen-logo.webp" type="image/webp">
+    <link rel="preload" as="font" type="font/woff" href="fonts/font-awesome/font/fontawesome-webfont5e1f.woff?v=2" crossorigin />
+
+    <link rel="stylesheet" href="rideordie/lib/bootstrap/dist/css/bootstrap.min5e1f.css?v=2" />
+    <link rel="stylesheet" href="rideordie/css/sitebea6.css?v=7" />
+    <link rel="stylesheet" href="rideordie/css/gamesae52.css?v=5" />
+    <link rel="stylesheet" type="text/css" href="rideordie/solitaire/css/jquery.mobile.min3f56.css?v=11" />
+    <link rel="stylesheet" type="text/css" href="rideordie/solitaire/css/style.minbea6.css?v=7" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome30f4.css?v=3" />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTMR7BRBWM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-VTMR7BRBWM');
+        </script>
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PVD92NZT');
+    </script>
+
+    
+    <script>
+        global_game_name = "klondike-1";
+    </script>
+
+    <script type='text/javascript' src="rideordie/solitaire/js/lib/jquery.min5e1f.js?v=2"></script>
+    <script type='text/javascript' src="rideordie/solitaire/js/lib/jquery-ui.min5e1f.js?v=2"></script>
+    <script type='text/javascript' src="rideordie/solitaire/js/lib/jquery.mobile.min5e1f.js?v=2"></script>
+    <script type="text/javascript" src="rideordie/solitaire/js/lib/jquery.st5e1f.js?v=2"></script>
+    <script type="text/javascript" src="rideordie/solitaire/js/lib/rd.min5e1f.js?v=2"></script>
+
+        <script type="text/javascript" src="rideordie/solitaire/js/others-solitaire.min1bce.js?v=6"></script>
+
+    
+    
+        <style>
+            body {
+                --fsAddBuffer: 5px;
+            }
+
+            [id='solitairen_siderail_right_1'],
+            [id='solitairen_banner_2'],
+            [id='solitairen_banner_1'],
+            [id='solitairen_leaderboard_1'],
+            [id='solitairen_leaderboard_2'],
+            [id='solitairen_banner_3'],
+            [id='solitairen_banner_4'] {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                min-height: calc(var(--height) + var(--fsAddBuffer));
+                width: 100%;
+            }
+
+            [id='solitairen_banner_3'] {
+                --height: 100px;
+            }
+
+            @media only screen and (min-width: 768px) {
+                [id='solitairen_banner_1'] {
+                    --height: 250px;
+                }
+
+                [id='solitairen_banner_2'] {
+                    --height: 250px;
+                }
+
+                [id='solitairen_banner_3'] {
+                    --height: 100px;
+                }
+
+                [id='solitairen_banner_4'] {
+                    --height: 250px;
+                }
+
+                [id='solitairen_leaderboard_1'] {
+                    --height: 90px;
+                }
+
+                [id='solitairen_leaderboard_2'] {
+                    --height: 600px;
+                }
+
+                [id='solitairen_siderail_right_1'] {
+                    --height: 280px;
+                }
+            }
+        </style>
+        <script data-cfasync="false" type="text/javascript">
+            var freestar = freestar || {};
+            freestar.queue = freestar.queue || [];
+            freestar.config = freestar.config || {};
+            freestar.config.enabled_slots = [];
+            freestar.initCallback = function () { (freestar.config.enabled_slots.length === 0) ? freestar.initCallbackCalled = false : freestar.newAdSlots(freestar.config.enabled_slots) }
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                try {
+                    setTimeout(() => {
+                        var ad = document.createElement('script');
+                        ad.async = true;
+                        ad.src = '../a.pub.network/solitairen-com/pubfig.min.js';
+                        var sc = document.getElementsByTagName('script')[0];
+                        sc.parentNode.insertBefore(ad, sc);
+                        freestar.queue.push(function () {
+                            googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+                                sendEventGtag('solitaire_ad_served');
+                            })
+                        });
+                        setInterval(() => {
+                            sendEventGtag('gam_ad_served');
+                        }, 30000);
+                    }, 20000);
+                } catch (e) {
+                }
+                setTimeout(() => {
+                    var ad = document.createElement('script');
+                    ad.async = true;
+                    ad.src = '../securepubads.g.doubleclick.net/tag/js/f.txt';
+                    var sc = document.getElementsByTagName('script')[0];
+                    sc.parentNode.insertBefore(ad, sc);
+                }, 19000)
+                window.googletag = window.googletag || { cmd: [] };
+                googletag.cmd.push(function () {
+                    googletag.pubads().set("page_url", "index.html");
+                    googletag.pubads().disableInitialLoad();
+                    googletag.enableServices();
+                });
+            });
+        </script>
+
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <script>
+        var value = localStorage.getItem('color') || '#076D2B';
+        setCookie('color', '#076D2B', 365);
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+    </script>
+
+        <script>
+            var loadTime;
+
+            window.onload = function () {
+                loadTime = (new Date().getTime()) / 1000;
+            };
+
+            window.onbeforeunload = popup;
+
+            function popup() {
+                var currentTime = (new Date().getTime()) / 1000;
+                if (currentTime - loadTime <= 180) {
+                    return 'I see you are leaving the site';
+                }
+            }
+        </script>
+</head>
+<body id="gogo">
+    <header>
+        <nav id="specialNav"  class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3 solitairen-navbar">
+            <div class="">
+                <a class="navbar-brand" id="navBarBtnGoMain" title="Logo" onclick="clearStorage('klondike-1')" target="_top" href="index.html">
+                    <img fetchpriority="high" src="img/solitaire-solitairen-logo.webp" width="175" height="25" class="img-fluid" alt="Solitairen Logo" />
+                </a>
+                <div class="d-sm-inline-flex navbarcontent-sol">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark"
+                               id="solitaire"
+                               title="Solitaire"
+                               style="cursor: pointer;" href="index.html"
+                               target="_top"
+                               onclick="clearStorage('klondike-1')">Solitaire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" style="cursor: pointer;" title="Spider Solitaire" id="spider-solitaire" href="spider-solitaire.html" target="_top" onclick="clearStorage('spider-1')">Spider</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('freecell-freecell')" href="freecell.html" target="_top" title="Freecell Solitaire" style="cursor: pointer;">Freecell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="hearts.html" target="_top" title="Hearts" id="hearts" style="cursor: pointer;">Hearts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="spades.html" target="_top" id="spades" title="Spades" style="cursor: pointer;">Spades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('pyramid-0')" href="pyramid-solitaire.html" target="_top" title="Pyramid Solitaire" id="pyramid-solitaire" style="cursor: pointer;">Pyramid</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="tripeaks-solitaire.html" target="_top" id="tripeaks" title="Tripeaks Solitaire" style="cursor: pointer;">Tripeaks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('klondike-yukon')" href="yukon-solitaire.html" target="_top" title="Yukon Solitaire" id="yukon-solitaire" style="cursor: pointer;">Yukon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('golf-golfeasy')" href="golf-solitaire.html" target="_top" title="Golf Solitaire" id="golf-solitaire" style="cursor: pointer;">Golf</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="mahjong.html" target="_top" id="mahjong" title="Mahjong" style="cursor: pointer;">Mahjong</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="yahtzee.html" target="_top" id="yahtzee" title="Yahtzee" style="cursor: pointer;">Yahtzee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" onclick="clearStorage('')" href="https://solitaireee.com/" target="_blank" id="solitaireee" title="Solitaireee" style="cursor: pointer;">New Solitaire</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown-all" id="dropbtn-sol">
+                                <a class="dropbtn-all2 nav-link text-dark" onclick="updateDropdown()" id="all-games" title="All Games" style="cursor: pointer;">All Games</a>
+                                <div class="dropdown-content-all" id="allgames-dropdown">
+                                    <div class="header nav-link text-dark">
+                                        <a class="nav-link text-dark" style="font-size: 11pt" title="Solitaire Turn 3" href="solitaire-draw-3.html">Game of the day: Solitaire Turn 3</a>
+                                    </div>
+                                    <div class="row" id="dropdown-content-sol" style="margin-bottom: 10px;">
+                                        <div class="col-3">
+                                            <ul style="list-style: none">
+                                                <li><a class="nav-link text-dark" title="Solitaire" href="index.html">Solitaire</a></li>
+                                                <li><a class="nav-link text-dark" title="Solitaire Turn 3" href="solitaire-draw-3.html">Solitaire Turn 3</a></li>
+                                                <li><a class="nav-link text-dark" title="Spider Solitaire" href="spider-solitaire.html">Spider</a></li>
+                                                <li><a class="nav-link text-dark" title="Spider Solitaire 2 Suits" href="spider-solitaire-2-suits.html">Spider 2 Suits</a></li>
+                                                <li><a class="nav-link text-dark" title="Spider Solitaire 4 Suits" href="spider-solitaire-4-suits.html">Spider 4 Suits</a></li>
+                                                <li><a class="nav-link text-dark" title="Freecell" href="freecell.html">Freecell</a></li>
+                                                <li><a class="nav-link text-dark" title="Frecell Twodecks" href="freecell-twodecks.html">Frecell Twodecks</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul style="list-style: none">
+                                                <li><a class="nav-link text-dark" title="Pyramid Solitaire" href="pyramid-solitaire.html">Pyramid</a></li>
+                                                <li><a class="nav-link text-dark" title="Yukon Solitaire" href="yukon-solitaire.html">Yukon</a></li>
+                                                <li><a class="nav-link text-dark" title="Golf Solitaire" href="golf-solitaire.html">Golf</a></li>
+                                                <li><a class="nav-link text-dark" title="Forty Thieves Solitaire" href="fortythieves-solitaire.html">Forty Thieves</a></li>
+                                                <li><a class="nav-link text-dark" title="Tripeaks Solitaire" href="tripeaks-solitaire.html">Tripeaks</a></li>
+                                                <li><a class="nav-link text-dark" title="Diplomat Solitaire" href="diplomat-solitaire.html">Diplomat</a></li>
+                                                <li><a class="nav-link text-dark" title="Flower Garden Solitaire" href="flowergarden-solitaire.html">Flower Garden</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul style="list-style: none">
+                                                <li><a class="nav-link text-dark" title="Scorpion Solitaire" href="scorpion-solitaire.html">Scorpion</a></li>
+                                                <li><a class="nav-link text-dark" title="Eightoff Solitaire" href="eightoff-solitaire.html">Eightoff</a></li>
+                                                <li><a class="nav-link text-dark" title="Bakers Solitaire" href="bakers-solitaire.html">Bakers</a></li>
+                                                <li><a class="nav-link text-dark" title="Simple Simon Solitaire" href="simplesimon-solitaire.html">Simple Simon</a></li>
+                                                <li><a class="nav-link text-dark" title="Easthaven Solitaire" href="easthaven-solitaire.html">Easthaven</a></li>
+                                                <li><a class="nav-link text-dark" title="Klondike Solitaire" href="klondike-solitaire.html">Klondike Solitaire</a></li>
+                                                <li><a class="nav-link text-dark" title="Klondike Solitaire Turn 3" href="klondike-turn-3.html">Klondike Turn 3</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-2">
+                                            <ul style="list-style: none">
+                                                <li><a class="nav-link text-dark" title="Yahtzee" href="yahtzee.html">Yahtzee</a></li>
+                                                <li><a class="nav-link text-dark" title="Mahjong" href="mahjong.html">Mahjong</a></li>
+                                                <li><a class="nav-link text-dark" title="Hearts" href="hearts.html">Hearts </a></li>
+                                                <li><a class="nav-link text-dark" title="Spades" href="spades.html">Spades</a></li>
+                                                <li><a class="nav-link text-dark" title="Chess" href="chess.html">Chess</a></li>
+                                                <li><a class="nav-link text-dark" title="Minesweeper Puzzle Game" href="minesweeper.html">Minesweeper</a></li>
+                                                <li>
+                                                    <a class="nav-link text-dark" title="Leaderboard" href="leaderboard.html"><i>Leaderboard</i></a>
+                                                </li>
+                                                <li><a class="nav-link text-dark" onclick="clearStorage('')" href="games.html" target="_top" title="All Games">Search Games</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" onclick="clearStorage('')" href="Identity/Account/Login.html" target="_top" id="Login" title="Login" style="cursor: pointer;">Login</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="topnav">
+    <a class="navbar-brand mobile-width-header" id="navBarBtnGo" onclick="clearStorage('klondike-1')" href="index.html">
+        <img fetchpriority="high" src="img/solitaire-solitairen-logo.webp" width="175" height="25" alt="Solitairen Logo Mobile" />
+    </a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-dark"
+                   id="solitaire-mobile"
+                   title="solitaire"
+                   style="cursor: pointer;" href="index.html"
+                   target="_top"
+                   onclick="clearStorage('klondike-1')">Solitaire</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" style="cursor: pointer;" title="spider" id="spider-solitaire-mobile" href="spider-solitaire.html" target="_top" onclick="clearStorage('spider-1')">Spider</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Freecell" onclick="clearStorage('freecell-freecell')" href="freecell.html" target="_top" style="cursor: pointer;">Freecell</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Hearts" onclick="clearStorage('')" href="hearts.html" target="_top" id="hearts-mobile" style="cursor: pointer;">Hearts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Spades" onclick="clearStorage('')" href="spades.html" target="_top" id="spades-mobile" style="cursor: pointer;">Spades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Pyramid" onclick="clearStorage('pyramid-0')" href="pyramid-solitaire.html" target="_top" id="pyramid-solitaire-mobile" style="cursor: pointer;">Pyramid</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Tripeaks-solitaire" onclick="clearStorage('')" href="tripeaks-solitaire.html" target="_top" id="tripeaks-solitaire-mobile" style="cursor: pointer;">Tripeaks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Yukon-solitaire" onclick="clearStorage('klondike-yukon')" href="yukon-solitaire.html" target="_top" id="yukon-solitaire-mobile" style="cursor: pointer;">Yukon</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Golf" onclick="clearStorage('golf-golfeasy')" href="golf-solitaire.html" target="_top" id="golf-solitaire-mobile" style="cursor: pointer;">Golf</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" title="Mahjong" onclick="clearStorage('')" href="mahjong.html" target="_top" id="mahjong-mobile" style="cursor: pointer;">Mahjong</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" onclick="clearStorage('')" href="yahtzee.html" target="_top" id="yahtzee-mobile" title="Yahtzee" style="cursor: pointer;">Yahtzee</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link text-dark" onclick="clearStorage('')" href="minesweeper.html" target="_top" id="minesweeper-mobile" title="Minesweeper" style="cursor: pointer;">Minesweeper</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link text-dark" onclick="clearStorage('')" href="games.html" target="_top" id="all-games-mobile" title="all games" style="cursor: pointer;">All Games</a>
+            </li>
+            <hr />
+                <li class="nav-item">
+                    <a class="nav-link text-dark" onclick="clearStorage('')" href="Identity/Account/Login.html" target="_top" id="Loginn-Mobile" title="Logi" style="cursor: pointer;">Login</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" onclick="clearStorage('')" href="Leaderboard-2.html" target="_top" id="Leadeboard" title="Leaderboard" style="cursor: pointer;">Leaderboard</a>
+            </li>
+        </ul>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <div href="javascript:void(0);" class="icon" onclick="mobileHeader()" style="margin-right: 10px">
+        Games
+    </div>
+</div>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            <noscript>
+                <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVD92NZT"
+                        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+            </noscript>
+            
+
+
+<script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Solitairen",
+      "url" : "https://solitairen.com/",
+      "description": "Play Solitaire Free Games. You can play Klondike Solitaire, FreeCell, Spider Solitaire, Hearts, Spades and many more games."
+    }
+</script>
+
+    <div id="g_id_onload"
+         data-client_id="718529429425-0g6igt13neu44sc3afls42qhmdmve7j8.apps.googleusercontent.com"
+         data-context="signin"
+         data-ux_mode="popup"
+         data-login_uri="https://solitairen.com/GoogleLogin/Login/"
+         data-auto_select="true"
+         data-auto_prompt="true"
+         data-prompt_parent_id="g_id_onload"
+         style="position: fixed; top: 40px; right: 20px; z-index: 2147483650;"
+         data-itp_support="true">
+    </div>
+
+<div id="parent-game" style="background-color: #076D2B">
+    <div id="wrapper" class="wrapper" style="background-color: #076D2B">
+        <div class="game-container" style="overflow-x: hidden;overflow-y: hidden; background-color: #076D2B;">
+            <div id='game-ui' style="background-color: #076D2B" data-role="page">
+                <div id='topBar'>
+                    <div id='topBarLeftContainer'  class='ml-5 pl-5'>
+                        <p class='game-name-text'>Solitaire</p>
+                        <div class='start-new-game2 bottomButton' onclick="sendEventGtag('solitaire_newgame'); newGame(); clearMultiplayer()">New Game</div>
+                        <div class='restart bottomButton' onclick="sendEventGtag('solitaire_restart');">Restart</div>
+                        <div id="draw1" class='bottomButton active-btn'>Turn 1</div>
+                        <div id="draw3" class='bottomButton'>Turn 3</div>
+                        <div class="bottomButton dropdown-sol dropbtn-sol" onclick="showDropdown()">
+                            More
+                            <div id="myDropdown" class="dropdown-content-sol">
+                                <a href="klondike-solitaire.html" title="Klondike Solitaire" target="_top">Klondike</a>
+                                <a href="diplomat-solitaire.html" title="Diplomat Solitaire" target="_top">Diplomat</a>
+                                <a href="flowergarden-solitaire.html" title="Flower Garden Solitaire" target="_top">Flower Garden</a>
+                                <a href="simplesimon-solitaire.html" title="Simple Simon Solitaire" target="_top">Simple Simon</a>
+                                <a href="fortythieves-solitaire.html" title="Forty Thieves Solitaire" target="_top">Forty Thieves</a>
+                            </div>
+                        </div>
+                        <div id='undo-but' class='bottomButton-undo' onclick="sendEventGtag('solitaire_undo')">Undo</div>
+                        <div id='hint-but' class='bottomButton-hint' onclick="sendEventGtag('solitaire_hint')">Hint</div>
+                        <div id='autoplay-but' class='bottomButton' onclick="sendEventGtag('solitaire_autoplay');">Auto Play</div>
+                        <div id='sound-but' class='bottomButton-hint'>
+                            <i class="icon-volume-up"></i>
+                        </div>
+                        <div class="dropdown">
+                            <span> <img src="rideordie/solitaire/images/settings-solitaire.webp" alt="Settings Button" width="28" height="28" class='bottomButton-fullscreen' /></span>
+                            <div class="dropdown-content">
+                                <div class="example circle">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="mt-3 mx-3">Background Color</div>
+                                        </div>
+                                        <div class="col-4">
+                                            <input type="text" class="coloris instance1" id="colorVal">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div id="faceCards" class='bottomButton-hint mt-3 mx-3 pt-2' onclick="showModal('faceCardsModal')">Card Set</div>
+                                </div>
+                                <div>
+                                    <div id="backCards" class='bottomButton-hint mt-3 mx-3 pt-2' onclick="showModal('backCardsModal')">Card Back</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div onclick="changeWindow()" id="screenSize" val="1">
+                            <img src="rideordie/solitaire/images/fullscreen-solitaire.webp" width="28" height="28" alt="Fullscreen Button" class='bottomButton-fullscreen' />
+                        </div>
+                        <a href="Leaderboard-2.html" target="_blank" title="Leaderboard">
+                            <img src="img/cup.webp" alt="show-leaderboard" loading="lazy" fetchpriority="low" class='img-fluid display-content' width="28" height="28" />
+                        </a>
+                        <a href="Identity/Account/Login91cd.html" target="_blank" title="Remove ads">
+                            <img src="img/no-ads.webp" alt="remove-ads" loading="lazy" fetchpriority="low" class='img-fluid display-content' width="28" height="28" />
+                        </a>
+                    </div>
+                </div>
+                <div id='playArea' class="mobile-padding-top" dir="ltr" >
+                    <div id='fakeCard'></div>
+                </div>
+
+                <div hidden>
+                    <div id="new-game-end-mobile" onclick="startNewGameFromMobile()" style="background-color: rgba(32,161,204,0.9); text-align: center; z-index: 100; position: absolute; top: 18%; bottom: 10%; left: 30%; right: 40%;" class='start-new bottomButton'>
+                        Play Now
+                    </div>
+                </div>
+
+                <div id="stats-game-sol" style="position: absolute; bottom: 1%;display: none;">
+                    <div class='top-display' style="float:left;">
+                        <span>Wins </span>: <span id="user-wins" class='display-content'>0</span>
+                    </div>
+                    <div id='display-time' class='top-display' style="float:left;">
+                        <span data-lang-ref="time">Time </span>:  <span class='display-content'>00:00</span>
+                    </div>
+                    <div id='display-moves' class='top-display' style="float:left;">
+                        <span data-lang-ref="moves">Moves</span>: <span class='display-content' id="my-moves">0</span>
+                    </div>
+                    <div id='size' class='top-display' style="float:left;">
+                        <div id="zoom-text" style="float:left; padding-right:10px;">Zoom</div>
+                        <div id="screen-minus" style="float:left; cursor: pointer">
+                            <i class="icon-chevron-sign-down"></i>
+                        </div>
+                        <div id="value-screen" style="float:left; margin-left: 10px; margin-right: 10px">
+                            100
+                        </div>
+                        <div id="screen-plus" style="float:left; cursor: pointer">
+                            <i class="icon-chevron-sign-up"></i>
+                        </div>
+                        <div id="dummy-update" style="float:left; cursor: pointer" hidden>
+                        </div>
+                    </div>
+                    <div class='top-display' style="float:left;">
+                        <div id="matchmaking-button" class='matchmaking' onclick="showMultiplayer()">Play Multiplayer</div>
+                    </div>
+                    <div id="oponnent-moves" hidden class='top-display' style="float:left;">
+                        <span id="opponent-moves-display-name"></span> Moves: <span class='display-content' id="oponnent-moves-count"></span>
+                    </div>
+                </div>
+                <div id='nomoremove-dialog-solitairen' hidden>
+                    <div>
+                        <h4>No more moves!</h4>
+                    </div>
+                    <div>
+                        <h5>
+                            There are no more moves available.
+                        </h5>
+                    </div>
+                    <div class="container">
+                        <div>
+                            <div id="new-game-end" onclick="hideIt(); newGame();" class='start-new bottomButton pt-2 button-no-more-moves'>New Game</div>
+                        </div>
+                        <div class="pt-2">
+                            <div id="new-rest-end" onclick="hideIt()" class='restart bottomButton pt-2 button-no-more-moves'>Restart this Game</div>
+                        </div>
+                        <div>
+                            <a href='#game-ui' title="undo" onclick="hideIt()" data-role='button' class='bottomButton pt-2 button-no-more-moves undo-button'>
+                                Undo some Moves
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id='win-dialog-solitairen' hidden>
+                    <div>
+                        <h4>CONGRATULATIONS!</h4>
+                    </div>
+                    <div>
+                        <h5>
+                            YOU WON!
+                        </h5>
+                    </div>
+                    <div class="container" style="padding-right: 40px;">
+                        <div id="new-game-end" onclick="newGameClick()" class='start-new-game2 bottomButton'>Play New Game</div>
+                        <div id="matchmaking-button " class='bottomButton-hint' onclick="showMultiplayer()">Play Multiplayer</div>
+                    </div>
+                </div>
+
+                <div class="matchmaking-dialog-solitairen" id='matchmaking-dialog-solitairen' hidden>
+                    <span class="close" onclick="closeMatchmakingModal()">&times;</span>
+                    <div>
+                        <h4 id="matchmaking-title"></h4>
+                    </div>
+                    <div>
+                        <h5 id="matchmaking-second-title">
+                        </h5>
+                    </div>
+                    <div class="container" style="padding-right: 40px;">
+                        <div id="findOpponent" onclick="findOpponent()" class='bottomButton'>Find Opponent</div>
+                    </div>
+                </div>
+
+                <div class="matchmaking-dialog-solitairen" id='matchmaking-lost-dialog-solitairen' hidden>
+                    <div>
+                        <h4 id="matchmaking-title-won-lost"></h4>
+                    </div>
+                    <div>
+                        <div>
+                            <div>
+                                <span>Your Moves</span>: <span id="your-lost-moves">0</span>
+                            </div>
+                            <div>
+                                <span id="opponentPlayerName"></span><span> Moves</span>: <span id="opponent-lost-moves">0</span>
+                            </div>
+                                <p>Register, if you want to keep your scores!</p>
+                                <p><a style="text-decoration: none" title="register" target="_top" href="Identity/Account/Register.html">Register</a></p>
+                        </div>
+                    </div>
+                    <div class="container" style="padding-right: 40px; padding-bottom: 10px;">
+                        <div class='start-new bottomButton' onclick="sendEventGtag('solitaire_newgame'); newGame()">Play Single Player</div>
+                        <div id="matchmaking-button " class='bottomButton-hint' onclick="showMultiplayer()">Play Multiplayer</div>
+                    </div>
+                </div>
+
+                <div id="match-info" hidden>
+                    <p id="match-id"></p>
+                    <p id="opponent-player-id"></p>
+                    <p id="opponent-player-name"></p>
+                    <p id="opponent-player-moves"></p>
+                </div>
+
+                <div id="backCardsModal" class="modal">
+                    <span class="close" onclick="closeModal('backCardsModal')">&times;</span>
+                    <div class="row mt-5 ">
+                        <div class="col-3 ml-4 card-back-size" onclick="setNewBackCard('rhombus_blue');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/rhombus_blue.webp" loading="lazy" alt="Red Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 ml-4 card-back-size" onclick="setNewBackCard('card-back-2');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-2.webp" loading="lazy" alt="Green Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 ml-4 card-back-size" onclick="setNewBackCard('card-back-3');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-3.webp" loading="lazy" alt="Blue Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 ml-4 card-back-size" onclick="setNewBackCard('card-back-4');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-4.webp" loading="lazy" alt="Brown Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 pt-4 ml-4 card-back-size" onclick="setNewBackCard('card-back-5');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-5.webp" loading="lazy" alt="Dark Red Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 pt-4 ml-4 card-back-size" onclick="setNewBackCard('card-back-6');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-6.webp" loading="lazy" alt="Classic Red Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 pt-4 ml-4 card-back-size" onclick="setNewBackCard('card-back-7');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-7.webp" loading="lazy" alt="Classic Blue Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 pt-4 ml-4 card-back-size" onclick="setNewBackCard('card-back-8');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-8.webp" loading="lazy" alt="Yellow Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 pt-4 ml-4 card-back-size" onclick="setNewBackCard('card-back-9');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-9.webp" loading="lazy" alt="Blue with Yellow Frame Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 pt-4 ml-4 card-back-size" onclick="setNewBackCard('card-back-10');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-10.webp" loading="lazy" alt="Red with Yellow Frame Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 pt-4 ml-4 card-back-size" onclick="setNewBackCard('card-back-11');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-11.webp" loading="lazy" alt="Blue Suits Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                        <div class="col-3 pt-4 ml-4 card-back-size" onclick="setNewBackCard('card-back-12');">
+                            <img data-src="/rideordie/solitaire/images/backs/146x198/card-back-12.webp" loading="lazy" alt="Red Circles Card Back" class="img-fluid img-modal lazy" />
+                        </div>
+                    </div>
+                </div>
+                <div id="faceCardsModal" class="modal">
+                    <span class="close" onclick="closeModal('faceCardsModal')">&times;</span>
+                    <div class="row mt-5 modal-size">
+                        <div class="col-4 pt-4 ml-4 card-back-size" onclick="setNewFaceCard('Modern')">
+                            <img data-src="/rideordie/solitaire/images/cards/thumbnails/modern.webp" loading="lazy" alt="Modern" class="img-fluid lazy" />
+                        </div>
+                        <div class="col-4 pt-4 ml-4 card-back-size" onclick="setNewFaceCard('Caricatures');">
+                            <img data-src="/rideordie/solitaire/images/cards/thumbnails/caricatures.webp" loading="lazy" alt="Caricatures" class="img-fluid lazy" />
+                        </div>
+                        <div class="col-4 pt-4 ml-4 card-back-size" onclick="setNewFaceCard('Puppies');">
+                            <img data-src="/rideordie/solitaire/images/cards/thumbnails/puppies.webp" loading="lazy" alt="Puppies" class="img-fluid lazy" />
+                        </div>
+                        <div class="col-4 pt-4 ml-4 card-back-size" onclick="setNewFaceCard('Flowers');">
+                            <img data-src="/rideordie/solitaire/images/cards/thumbnails/flowers.webp" loading="lazy" alt="Flowers" class="img-fluid lazy" />
+                        </div>
+                        <div class="col-4 pt-4 ml-4 card-back-size" onclick="setNewFaceCard('Classic');">
+                            <img data-src="/rideordie/solitaire/images/cards/thumbnails/classic.webp" loading="lazy" alt="Classic" class="img-fluid lazy" />
+                        </div>
+                        <div class="col-4 pt-4 ml-4 card-back-size" onclick="setNewFaceCard('Kittens');">
+                            <img data-src="/rideordie/solitaire/images/cards/thumbnails/kittens.webp" loading="lazy" alt="Kittens" class="img-fluid lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <noscript>
+                <div style='background:red;color:white;'>
+                    You need to enable JavaScript to play this game!
+                </div>
+            </noscript>
+        </div>
+        
+
+    <div class="side-view">
+            <div style="overflow-y: hidden; width: 300px !important">
+                <div align="center" id="solitairen_placeholder">
+                    <script data-cfasync="false" type="text/javascript">
+                        freestar.config.enabled_slots.push({ placementName: "solitairen_placeholder", slotId: "solitairen_placeholder" });
+                    </script>
+                </div>
+
+                    <div id="FreeStarVideoAdContainer" style="width: 300px; height: 190px">
+                        <div id="freestar-video-parent">
+                            <div id="freestar-video-child">
+                                <script>
+                                    freestar.queue.push(function () {
+                                        freestar.newVideo("FreeStarVideoAdContainer");
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                <div align="center" data-freestar-ad="__300x250" id="solitairen_banner_1">
+                    <script data-cfasync="false" type="text/javascript">
+                        freestar.config.enabled_slots.push({ placementName: "solitairen_banner_1", slotId: "solitairen_banner_1" });
+                    </script>
+                </div>
+
+                <div align="center" data-freestar-ad="__300x250" id="solitairen_banner_2">
+                    <script data-cfasync="false" type="text/javascript">
+                        freestar.config.enabled_slots.push({ placementName: "solitairen_banner_2", slotId: "solitairen_banner_2" });
+                    </script>
+                </div>
+
+                <div align="center" data-freestar-ad="__300x250" id="solitairen_banner_4">
+                    <script data-cfasync="false" type="text/javascript">
+                        freestar.config.enabled_slots.push({ placementName: "solitairen_banner_4", slotId: "solitairen_banner_4" });
+                    </script>
+                </div>
+
+                <div align="center" data-freestar-ad="__300x100 __300x100" id="solitairen_banner_3">
+                    <script data-cfasync="false" type="text/javascript">
+                        freestar.config.enabled_slots.push({ placementName: "solitairen_banner_3", slotId: "solitairen_banner_3" });
+                    </script>
+                </div>
+            </div>
+    </div>
+    <div class="full-view">
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var minHeight = window.innerHeight;
+            if (minHeight >= 850) {
+            } else if (minHeight >= 700 && minHeight <= 849) {
+                $('#solitairen_banner_3').remove();
+            } else if (minHeight >= 600 && minHeight <= 699) {
+                $('#solitairen_banner_3').remove();
+            } else {
+                $('#solitairen_banner_3').remove();
+                $('#solitairen_banner_4').remove();
+            }
+        });
+    </script>
+
+    </div>
+
+    <div class="video-ad-bottom">
+    </div>
+</div>
+
+<div class="below-game" style="display: flex;">
+    <div style="flex-basis: 70%; margin-left:50px">
+        <div>
+            <a href="https://apps.microsoft.com/detail/9NP319DWM0FR" target="_blank"><img data-src="/img/social-media/microsoft-store-solitairen-logo.webp" loading="lazy" alt="Solitaire Solitairen Microsoft Store" class="img-fluid solitairen-border mt-3 mb-4 mx-2 lazy" style="width:119px; height:40px;" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.solitairen.solitaireonlinecardgames" target="_blank"><img data-src="/img/social-media/google-play-solitairen-logo.webp" loading="lazy" alt="Solitaire Solitairen Google Play" class="img-fluid solitairen-border mt-3 mb-4 mx-2 lazy" style="width:119px; height:40px;" /></a>
+        </div>
+        <h1 class="mb-4">Play Solitaire Online For Free and For Fun</h1>
+        <section id="game-description">
+            <p>Welcome to Solitairen.com – the latest platform where you can play solitaire online for free. We made this solitaire gaming platform to provide you with a lot of hours for fun. But save for providing you with access to the best Solitaire games on the web these days, we are also dedicated to introducing you to the world of Patience games at total value. Playing for fun is not as risky as real money games, but if you want more positive emotions and wins, you need to be aware of the best practices, strategies and rules.</p>
+            <p>If you agree, we are happy to invite you to our website. Here’s where your journey to the free solitaire patience games starts. Have our company by your side to make it more successful, meaningful and full of daily victories.</p>
+            <p>
+                You can also check out some of the other free games we have, including
+                <a href="solitaire-draw-3.html" alt="Solitaire Turn 3" title="Solitaire Turn 3" style="text-decoration:none" target="_self">Solitaire Turn 3</a>,
+                <a href="klondike-solitaire.html" alt="Klondike Solitaire" title="Klondike Solitaire" style="text-decoration:none" target="_self">Klondike Solitaire</a>,
+                <a href="spider-solitaire.html" alt="Spider Solitaire" title="Spider Solitaire" style="text-decoration:none" target="_self">Spider Solitaire</a>,
+                <a href="freecell.html" alt="Online FreeCell" title="Online FreeCell" style="text-decoration:none" target="_self">FreeCell</a>,
+                <a href="scorpion-solitaire.html" alt="Scorpion Solitaire" title="Scorpion Solitaire" style="text-decoration:none" target="_self">Scorpion Solitaire</a>,
+                <a href="hearts.html" alt="Hearts Free Online" title="Hearts Free Online" style="text-decoration:none" target="_self">Hearts</a>,
+                <a href="spades.html" alt="Spades Online" title="Spades Online" style="text-decoration:none" target="_self">Spades</a> or
+                <a href="mahjong.html" alt="Mahjong Game" title="Mahjong Game" style="text-decoration:none" target="_self">Mahjong</a>.
+            </p>
+        </section>
+        <section>
+            <picture>
+                <source media="(max-width: 999px)" srcset="/img/index/how-to-play-solitaire-game-1-300.webp" />
+                <source media="(min-width: 1000px)" srcset="/img/index/how-to-play-solitaire-1-sized.webp" />
+                <img data-src="/img/index/how-to-play-solitaire-1-sized.webp" class="img-fluid solitairen-border pt-3 pb-4" loading="lazy" fetchpriority="low" width="876" height="452" alt="Start solitaire game" />
+            </picture>
+        </section>
+        <section id="what-is-solitaire">
+            <h2>What is Solitaire?</h2>
+            <p>Solitaire is one of the oldest games in the world. You can also meet it by the name of Patience game as it takes lots of patience to learn how to play Solitaire and how to win eventually.</p>
+            <p>This is a classic card game. In most cases, you need a standard deck of 52 cards. Due to the game's progression through the years, you can also meet many free solitaire patience games with fewer or more cards.</p>
+            <p>Solitaire also falls into the company of the single-player games. This means that you don’t need a partner or a considerable number of opponents to play it. In short, we can also determine this game of a "building" type. It’s because Solitaire requires you to build a foundation of piles of cards via a concrete set of rules and strict chronological order.</p>
+        </section>
+
+        <section id="user-feedbacks">
+            <h2 class="mb-5">User reviews for Solitairen</h2>
+            <div class="row ml-2">
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"No improvements necessary. Everything is perfect. Playing Solitairen relieves the stress of the day."</i></p>
+                    </div>
+                </div>
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"I love this website. I`m playing every day for hours!"</i></p>
+                    </div>
+                </div>
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"i love your platform! best solitaire and freecell and spider solitaire on the internet!"</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ml-2">
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"Great game to past the time."</i></p>
+                    </div>
+                </div>
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"I like that I can play for free."</i></p>
+                    </div>
+                </div>
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"love the game as it is"</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ml-2">
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"Love the option to play solitaire multiplayer."</i></p>
+                    </div>
+                </div>
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"Best solitaire game and love the blog posts"</i></p>
+                    </div>
+                </div>
+                <div class="col-4" style="border-width: 1px">
+                    <div class="card-body">
+                        <p class="card-text"><i>"Don't change anything, top solitaire'"</i></p>
+                    </div>
+                </div>
+            </div>
+            <div id="more-reviews" hidden>
+                <div class="row ml-2">
+                    <div class="col-4" style="border-width: 1px">
+                        <div class="card-body">
+                            <p class="card-text"><i>"You guys rules, I can play even on my phone"</i></p>
+                        </div>
+                    </div>
+                    <div class="col-4" style="border-width: 1px">
+                        <div class="card-body">
+                            <p class="card-text"><i>"relieve the stress with Solitairen :D"</i></p>
+                        </div>
+                    </div>
+                    <div class="col-4" style="border-width: 1px">
+                        <div class="card-body">
+                            <p class="card-text"><i>"You have top and most loved solitaire games - Golf Solitaire and Pyramid Solitaire are my favourite"</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="position: absolute; left: 50%;">
+                <a class="text-dark" id="view-more" onclick="showMoreReviews()">View more</a>
+            </div>
+        </section>
+
+        <section class="pt-5" id="who-invented-solitaire">
+            <h2>Who invented Klondike Solitaire?</h2>
+            <p>You will find Solitaire by the name of Klondike or Klondike Solitaire Turn One in many materials, platforms, apps and even ordinary paper books. The two terms refer to the same type of game. As a matter of fact, Klondike is the first name of this game prototype. Speaking of which, you might be wondering who invented it. </p>
+            <p>When it comes to Solitaire background history, you should know that there are several essential development phases through which the game has moved to appear in its present look and set of rules. But the beginning of the Solitaire game is reportedly back in ancient times. Many historians claim this fun type originates in the Greek or Roman epochs. Back then, the game wasn’t played with a classical deck of 52 paper cards. Instead, the players used stone piles, handmade wooden elements, and you name it.</p>
+            <p>It’s exciting that other history experts say that Solitaire has a Scandinavian descent. This suggestion is related to a legend according to which, after imprisonment, an intelligent man decided to invent a form of mathematical fun to become less monotonous and not get crazy. This is how the game was spread among criminals, which is probably why, in the 17th century in Switzerland, the states banned Solitaire, determining it as a "prayer book of the devil".</p>
+            <p>On the other side, the closest version to today’s Solitaire design was named Klondike, and it was created at the end of the 18th and the beginning of the 19th century. There are many theories about the original Solitaire creation, but most relate it to the French Revolution. Whether in France or another country, Europe definitely became the region from which the game's current look was spread among the different continents.</p>
+        </section>
+        <section id="modern-solitaire-games">
+            <h2>What are the modern solitaire games?</h2>
+            <p>Through the years, the game has gone through a lot to acquire the present design of the free solitaire patience games. Similarly to many spheres in our contemporary life, the technology revolution has made Solitaire strengthen its position as a card entertainment.</p>
+            <p>Many Klondike (Klondike Solitaire Turn One) lovers among the Z generation don’t even suggest that this game has become so popular thanks to one of the IT leading pioneers. The extensive Solitaire modernization starts with its digitalization. The year was 1990th, and the first home computers were released for sale. There was no option for an OS back then except for the classical Windows. There was not much to do for fun in this primary desktop device infrastructure except for Solitaire. What Microsoft made was to make the game a part of Windows, and it turned into the first popular computer game of all time.</p>
+            <p>These days, we can still find Klondike solitaire integrated into operating systems, applications, websites, forums, social media. The game is still widespread across the audience, so its formats have been rising through the years. As you can guess, on our website, you can meet most of them – 100% for free and accompanied by a step-by-step guide.</p>
+        </section>
+        <section id="solitaire-rules">
+            <h2>What are the Solitaire rules?</h2>
+            <p>In these guides, our team’s instructions mainly focus on the game rules. It’s important to mention that different Klondike solitaire titles have different goals, chronologies to follow when arranging the cards, sometimes different requirements for the number of playing cards, etc. But the set of essential rules is identical in most of the Solitaire games.</p>
+            <p>Solitaire rules are simple and easy to understand. A player should create a concrete foundation of all the cards to finish respectively win the game. For this purpose, the user is supposed to move cards from one tableau pile to another. It’s also possible to move whole groups of cards.</p>
+        </section>
+        <section id="what-i-need-to-play-solitaire">
+            <h2>What do I need to play Solitaire Free Online games?</h2>
+            <p>There are two ways you can play solitaire free online games. The first – the old-fashioned method- is having a deck of 52 cards. In this case, you should select in advance a concrete format – Spider, Spades, Pyramid and so on.</p>
+            <p>The second way is the digital way. Play Solitaire Free Online. You don’t even have to look for a website with Klondike Solitaire (Klondike Solitaire Turn One). Our website provides you with the top beloved Solitaire games in one place. You can test them all.</p>
+            <p>No matter what method you prefer, keep in mind that you will need some other things to play Solitaire games, including:</p>
+            <ul>
+                <li><strong>A guide.</strong> No matter how simple this game is, you will not be able to win without knowing its rules. Don’t leave our website because you will get a top-notch set of instructions to play free solitaire patience games.</li>
+                <li><strong>Soft skills.</strong> Solitaire is not as tricky as blackjack; for instance, you should have a solid strategy and constantly count the cards. It’s also not like poker, where you need to know how to bluff and integrate some psychological knowledge and tactics. Yet, soft skills like patience, adaptability, staying focused, self-leadership and high motivation are necessary.</li>
+                <li><strong>Time.</strong> Although Solitaire has always been played for fun, they require you to invest some time. Many formats are made to take an hour for you to build the entire foundation.</li>
+                <li><strong>Dictionary.</strong> Thankfully, the terms aren’t that many in free solitaire patience games. It would help if you had a few minutes to learn the basics. Here are the essential keywords you should know before starting your first Klondike game:</li>
+            </ul>
+            <p><strong>Stockpile</strong> – a set of cards with their faces down. At the beginning of any Solitaire game, all the cards are in the stockpile, and with each next move of yours, you reach and place them in the foundation with their faces up. The Stockpile is available, though, for you to use it for the tableau.</p>
+            <p><strong>Foundation</strong> – this is another set of cards. The set, though, is formed of several piles. There are 4 in total, and each pile refers to a concrete suit. The foundation is closely related to your main goal in the Solitaire Klondike game – to move the cards from the deck to these four foundation piles. Remember that you cannot only place a card in a concrete pile by referring to its suite. You should also follow the chronology of the cards, which is specific to the different free solitaire patience games (for instance, from K to A, from A to K, and you name it).</p>
+            <p><strong>Tableau</strong> – this is the final – third – set of cards in the game, and it’s also made of several piles, but each of them has 7 cards with their faces down, excluding the last card, which is with a face up. All the remaining cards from the deck are transferred to the tableau pile with their faces down. You have the right to move different cards from the tableau directly to the foundation and from one tableau pile to another. The only requirement you should keep in mind is the correct order of the tableau pile – in descending order and alternating color.</p>
+        </section>
+        <section id="stockpile-foundation-tableau">
+            <picture>
+                <source media="(max-width: 999px)" srcset="/img/index/how-to-play-solitaire-2-300.webp" />
+                <source media="(min-width: 1000px)" srcset="/img/index/how-to-play-solitaire-2-sized.webp" />
+                <img data-src="/img/index/how-to-play-solitaire-2-sized.webp" class="img-fluid solitairen-border pt-3 pb-4" loading="lazy" fetchpriority="low" width="876" height="452" alt="Stockpile, Foundation, Tableau in solitaire" />
+            </picture>
+        </section>
+        <section id="how-to-play-solitaire">
+            <h2>How to play Solitaire?</h2>
+            <p>It is not difficult to learn to play Solitaire online. Especially on our website! It’s because we provide a concrete guide for the gameplay of each Klondike popular title. Basically, here are the rules to follow when you start a concrete game:</p>
+            <ol type="1">
+                <li>First of all, examine the top cards of each tableau pile.</li>
+                <li>
+                    <p>
+                        You can move cards onto tableau piles if they are in descending numerical order and of a different color (e.g., a red Queen can be placed on a black King).
+                    </p>
+                    <picture>
+                        <source media="(max-width: 999px)" srcset="/img/index/how-to-play-solitaire-3-300.webp" />
+                        <source media="(min-width: 1000px)" srcset="/img/index/how-to-play-solitaire-3-sized.webp" />
+                        <img data-src="/img/index/how-to-play-solitaire-3-sized.webp" class="img-fluid solitairen-border pt-3 pb-4" loading="lazy" fetchpriority="low" width="876" height="452" alt="Move a card in solitaire" />
+                    </picture>
+                </li>
+                <li>
+                    <p> When you see cards that can be moved directly to the foundation piles, perform the movement without delay. Ace cards can be moved to foundation piles directly.</p>
+                    <picture>
+                        <source media="(max-width: 999px)" srcset="/img/index/how-to-play-solitaire-4-300.webp" />
+                        <source media="(min-width: 1000px)" srcset="/img/index/how-to-play-solitaire-4-sized.webp" />
+                        <img data-src="/img/index/how-to-play-solitaire-4-sized.webp" class="img-fluid solitairen-border pt-3 pb-4" loading="lazy" fetchpriority="low" width="876" height="452" alt="Move Ace card in solitaire" />
+                    </picture>
+                </li>
+                <li>
+                    <p>
+                        Always consider how to make some empty space within each of the seven tableau columns to simplify your next moves. On an empty tableau column you can move only a King.
+                    </p>
+                    <picture>
+                        <source media="(max-width: 999px)" srcset="/img/index/how-to-play-solitaire-5-300.webp" />
+                        <source media="(min-width: 1000px)" srcset="/img/index/how-to-play-solitaire-5-sized.webp" />
+                        <img data-src="/img/index/how-to-play-solitaire-4-sized.webp" class="img-fluid solitairen-border pt-3 pb-4" loading="lazy" fetchpriority="low" width="876" height="452" alt="Move King card in solitaire" />
+                    </picture>
+                </li>
+            </ol>
+        </section>
+        <section id="solitaire-video-tutorial" class="mb-4">
+            <h2>Solitaire Tutorial – Video Gameplay Guide</h2>
+            <p>Below, we show you a short video tutorial where the basic movements in Solitaire games are performed. We strongly recommend you check out the entire video and follow the sequence of the rules from the previous paragraph.</p>
+            <p>When needed, pause the video and go back to the instructions. It’s a must for you to fully and clearly understand the philosophy of the free solitaire patience games.</p>
+            <a href="https://youtu.be/qhs4Jno3c0Q" target="_blank">
+                <picture>
+                    <source media="(max-width: 999px)" srcset="/img/index/how-to-play-solitaire-video-220-new.webp" />
+                    <source media="(min-width: 1000px)" srcset="/img/index/how-to-play-solitaire-video-sized-new.webp" />
+                    <img data-src="/img/index/how-to-play-solitaire-video-sized-new.webp" class="img-fluid solitairen-border pt-3 pb-4" loading="lazy" fetchpriority="low" width="600" height="310" alt="How to play Solitaire video" />
+                </picture>
+            </a>
+        </section>
+        <section id="best-solitaire-strategy">
+            <h2>What’s the Best Solitaire Strategy?</h2>
+            <p>Like in any other game, in Solitaire, people need a couple of games to learn the rules and understand its basic gameplay. A bit later – after playing dozens of free solitaire patience games, you might start thinking about a strategy.</p>
+            <p>Building a tactic to win in Solitaire or any other card game is a matter of personal approach and individual skills. Yet, there are a couple of universal tips that everyone of you can put into force to get closer (and faster) to victory.</p>
+            <p>Our team of Solitaire Klondike experts has gathered the best essential hacks and tricks for you to follow:</p>
+            <ul>
+                <li><strong>Always plan ahead.</strong> When you make a move, don’t perform until you make sure that it won’t corrupt your next 2-3 moves.</li>
+                <li><strong>Stick to the principle of color balance.</strong> Make sure to work with the seven tableau piles and not neglect any suits.</li>
+                <li><strong>Uncovering is the key.</strong> The more cards with their faces down you open up, the better for your overall Solitaire Klondike activity.</li>
+                <li><strong>Have a concrete plan for the foundation before the game starts.</strong> Make a quick strategy for how exactly you will act to build your foundation. No matter what moves you make, they should be done in the name of this foundation.</li>
+                <li><strong>Avoid blocking any of the Aces.</strong> This means you shouldn’t place a card in front of the Ace, no matter what tableau you are working on right now. It is because, in 99% of the cases, the Ace puts the beginning of any pile management.</li>
+                <li><strong>Movements with sequences.</strong> When you make an entire unit, move it fully. This will save you lots of time.</li>
+                <li><strong>Don’t forget the Draw Pile.</strong> It’s where you have more cards to reveal.</li>
+            </ul>
+        </section>
+        <section id="why-playing-solitaire">
+            <h2>Why Playing Solitaire?</h2>
+            <p>Many people play Solitaire for fun, to kill boredom, and to spend their leisure just doing something. But did you know that specialists from many spheres, including medicine, psychology and others, claim that Klondike can be helpful and valuable.</p>
+            <p>Here are the scientifically proven benefits of playing free solitaire patience games regularly:</p>
+            <ul>
+                <li><strong>Solitaire can be pretty relaxing.</strong> Whether you are in a dark place and have dark thoughts or it is just another dynamic and stressful day, a couple of hours spent in Klondike activity can relieve the pressure and the tension.</li>
+                <li><strong>Upgrades your patience.</strong> Indeed, you need patience to win in a Patience game. However, if you don’t possess this soft skill, the more free solitaire patience games you play, the more patient you will become.</li>
+                <li><strong>Works as a therapy.</strong> Some psychiatrists say that Solitaire games can reduce anxiety symptoms.</li>
+                <li><strong>Gymnastics for the brain.</strong> It’s been several decades since neurology scientists have proven that learning new things, reading and playing board games can reduce the risk of dementia in people of a mature age. Solitaire is an excellent option for them. However, you don’t have to be in your 50s to start playing free solitaire patience games. Some people turn to Klondike activity when they get stuck, with zero inspiration or in case of a blockage before an exam.</li>
+                <li><strong>Improve your cognitive abilities.</strong> Your memory, staying focused, and your motivation will improve if you start playing free solitaire patience games regularly.</li>
+            </ul>
+        </section>
+        <section id="popular-solitaire-games">
+            <h2>Top Popular Solitaire Games</h2>
+            <p>There are more than <a href="https://en.wikipedia.org/wiki/List_of_patience_games" target="_blank" style="text-decoration:none">500 Solitaire patience games to play.</a> We present you the most interesting, intriguing and engaging Solitaire games you should try. Of course, the majority of them are the top popular Solitaire Klondike titles, including:</p>
+            <ul>
+                <li class="mb-3"><a href="spider-solitaire.html" alt="Spider Solitaire" title="Spider Solitaire" style="text-decoration:none" target="_self">Spider Solitaire</a></li>
+                <li class="mb-3"><a href="scorpion-solitaire.html" alt="Scorpion Solitaire" title="Scorpion Solitaire" style="text-decoration:none" target="_self">Scorpion Solitaire</a></li>
+                <li class="mb-3"><a href="golf-solitaire.html" alt="Golf Solitaire" title="Golf Solitaire" style="text-decoration:none" target="_self">Golf Solitaire</a></li>
+                <li class="mb-3"><a href="pyramid-solitaire.html" alt="Pyramid Solitaire" title="Pyramid Solitaire" style="text-decoration:none" target="_self">Pyramid Solitaire</a></li>
+                <li class="mb-3"><a href="yukon-solitaire.html" alt="Yukon Solitaire" title="Yukon Solitaire" style="text-decoration:none" target="_self">Yukon Solitaire</a></li>
+                <li class="mb-3"><a href="tripeaks-solitaire.html" alt="TriPeaks Solitaire" title="TriPeaks Solitaire" style="text-decoration:none" target="_self">TriPeaks Solitaire</a></li>
+            </ul>
+            <p>Heare are some more interesting games:</p>
+            <ul>
+                <li class="mb-3"><a href="spider-solitaire-2-suits.html" alt="Spider Solitaire (2SuitsFree & Online" title="Spider Solitaire (2 Suits) Free & Online" style="text-decoration:none" target="_self">Spider Solitaire 2 Suits</a></li>
+                <li class="mb-3"><a href="spider-solitaire-4-suits.html" alt="Spider Solitaire (4 Suits) Free & Online" title="Spider Solitaire (4 Suits) Free & Online" style="text-decoration:none" target="_self">Spider Solitaire 4 Suits</a></li>
+                <li class="mb-3"><a href="fortythieves-solitaire.html" alt="Forty Thieves Solitaire Free & Online" title="Forty Thieves Solitaire Free & Online" style="text-decoration:none" target="_self">Forty Thieves Solitaire Free & Online</a></li>
+                <li class="mb-3"><a href="diplomat-solitaire.html" alt="Diplomat Solitaire" title="Diplomat Solitaire" style="text-decoration:none" target="_self">Diplomat Solitaire</a></li>
+            </ul>
+        </section>
+        <section id="interesting-facts-about-solitaire" class="mb-4">
+            <h2>Top Interesting Facts About Solitaire You Did Not Know</h2>
+            <p>To arouse your curiosity in Solitaire gaming culture, we have a couple of more things to tell you. Especially for you, our sincere readers, we have gathered some of the most exciting facts about Solitaire Klondike you have definitely never heard about:</p>
+            <ul>
+                <li>The origin of the word Solitaire is French. The term comprises two famous words – solus for "separates" and solitas "isolation".</li>
+                <li>Solitaire is one of the most popular card games in the world. It is estimated that over 100 million games of Solitaire are played every day.</li>
+                <li>Online Solitaire is even more popular than traditional Solitaire. This is because online Solitaire is more convenient and accessible. Players can play it on their computers, smartphones, or tablets.</li>
+                <li>Unlike most games, the Solitaire game offers more chances for a win than a loss.</li>
+                <li>It was a Microsoft shy intern’s idea to put Solitaire in the Windows set of features.</li>
+                <li>Online Solitaire games became popular in the 1990s. This was due to the rise of the internet and the popularity of web browsers.</li>
+                <li>Solitaire is sometimes a source of income. There are significant international events where professionals gather to combat. Solitaire has recently been added next to Dota 2, and CS Go is in the list of the top eSports disciplines.</li>
+                <li>In the past, Solitaire was used by magicians and fortune-tellers to predict the future.</li>
+                <li>Queen Victoria and Bill Gates are the most famous celebrities who are huge fans of Solitaire.</li>
+            </ul>
+            <p>If you want more information, facts, strategies and concrete titles from the endless universe of Solitaire Klondike, visit our page regularly. We promise not to disappoint you when it comes to having fun and a victory in this legendary card game!</p>
+        </section>
+        <hr />
+    </div>
+</div>
+
+
+
+
+            <div id='feedback-dialog-solitairen' hidden>
+                <div style="padding-top: 20px;">
+                    <h4>Thank you for choosing Solitairen!</h4>
+                </div>
+                <div>
+                    <h5>
+                        We will be happy, if we get some feedback from you how to improve our platform!
+                    </h5>
+                </div>
+                <div class="container" style="padding-bottom: 5px">
+                    <textarea id="text-submit" style="width: 90%" rows="3" cols="60" placeholder="Type your feedback here...">
+                        </textarea>
+                </div>
+                <div class='bottomButton-hint' style="width: 50%; margin: auto" onclick="submitFeedback()">Submit</div>
+                <div class='bottomButton' style="width: 50%; margin: auto;padding-bottom: 25px" onclick="closeFeedback()">Cancel</div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="solitairen-border">
+        <section class="footer-area">
+            <div class="footer-area container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-sm-3 pt-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">
+                                <a href="Blog2679.html?page=1" onclick="clearStorage('')" target="_top" title="Blog" class="text-center">Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 pt-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">
+                                <a href="Leaderboard-2.html" onclick="clearStorage('')" target="_top" title="Leaderboard" class="text-center">Leaderboard</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 pt-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">
+                                <a href="Identity/Account/Login6ee2.html" onclick="clearStorage('')" target="_top" title="Profile" class="text-center">Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 pt-3">
+                        <div class="footer-widget">
+                            <div class="footer-widget-title">
+                                <a href="pages/privacy-policy.html" title="Privacy" onclick="clearStorage('')" target="_top" class="text-center">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media pt-5" style="text-align: center;">
+                        <a href="https://www.facebook.com/solitairengames" target="_blank"><img src="img/social-media/facebook.webp" loading="lazy" alt="Facebook Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a href="https://twitter.com/solitairengames" target="_blank"><img src="img/social-media/twitter-x.webp" loading="lazy" alt="Twitter X Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a href="https://www.tiktok.com/@solitairengames" target="_blank"><img src="img/social-media/tiktok.webp" loading="lazy" alt="TikTok Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a href="https://www.youtube.com/@solitairen" target="_blank"><img src="img/social-media/youtube.webp" loading="lazy" alt="YouTube Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a aria-label="RSS" target="_blank" href="Rss/Blog"><img src="img/social-media/rss.webp" loading="lazy" alt="RSS Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:40px; height:40px;" /></a>
+                        <a href="https://apps.microsoft.com/search/publisher?name=Solitairen&amp;hl=en-us&amp;gl=US" target="_blank"><img src="img/social-media/microsoft-store-solitairen-logo.webp" loading="lazy" alt="Microsoft Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:119px; height:40px;" /></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.solitairen.solitaireonlinecardgames" target="_blank"><img src="img/social-media/google-play-solitairen-logo.webp" loading="lazy" alt="Google Play Solitairen" class="img-fluid solitairen-border mt-3 mb-4 mx-2" style="width:119px; height:40px;" /></a>
+                    </div>
+                    <div class="row spacing-top-40">
+                        <p>Copyrighted by <a href="index.html" title="Home" target="_top">Solitairen</a> | All Rights Reserved</p>
+                    </div>
+                    <div class="row">
+                        <p>If you have any questions, please do not hestitate to contact us: <a title="contacts@solitairen.com" href="mailto:contacts@solitairen.com">contacts@solitairen.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </footer>
+
+            <script type="text/javascript">
+                Object.keys(localStorage).forEach(key => {
+                    if (key.toString().includes('solitairen') && !key.toString().includes("gameWinCount")) {
+                        localStorage.removeItem(key);
+                    }
+                });
+                global_game_name = "klondike-1";
+            </script>
+                <script type="text/javascript">
+                    global_game_name = "klondike-1";
+                </script>
+
+
+    <script src="rideordie/lib/bootstrap/dist/js/bootstrap3860.js?v=1"></script>
+    <script type="text/javascript" src="rideordie/js/coloris3860.js?v=1"></script>
+
+    <script src="rideordie/js/solitairen30f4.js?v=3"></script>
+    <script>
+        function updateDropdown() {
+            sendEventGtag('view-all-games');
+            if ($('.dropdown-content-all').css('display') === 'block') {
+                $('.dropdown-content-all').css('display', 'none');
+            } else {
+                $('.dropdown-content-all').css('display', 'block');
+            }
+        }
+
+        $(document).ready(function () {
+            setTimeout(() => {
+                $('#specialNav').removeAttr('hidden');
+            }, 120000);
+
+            $('a').click(function () {
+                window.onbeforeunload = null;
+            });
+
+            $('#draw3,#draw2,#draw4, #draw1').click(function () {
+                window.onbeforeunload = null;
+            });
+
+            $('.card-back-size').click(function () {
+                window.onbeforeunload = null;
+            });
+
+            $('#wrapper > div.game-container.ui-mobile-viewport.ui-overlay-a > div.ui-loader.ui-corner-all.ui-body-a.ui-loader-default')
+                .remove();
+
+            setInterval(() => {
+                sendEventGtag('gam_ad_served');
+            }, 30000);
+        });
+
+        function submitFeedback() {
+            $.post("Feedback", {
+                text: $('#text-submit').val()
+            })
+            localStorage.setItem('feedback', 1);
+            $('#feedback-dialog-solitairen').attr("hidden", true);
+        }
+
+        function closeFeedback() {
+            $('#feedback-dialog-solitairen').attr("hidden", true);
+            localStorage.setItem('feedback', 0);
+            sendEventGtag('cancel-feedback');
+        }
+    </script>
+    <script>
+        function clearStorage(id) {
+
+            Object.keys(localStorage).forEach(key => {
+                if (key.toString().includes('solitairen') && !key.toString().includes("gameWinCount")) {
+                    localStorage.removeItem(key);
+                }
+            });
+            global_game_name = id;
+        }
+
+        function mobileHeader() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    
+    <script type="text/javascript">
+        var intervalId;
+        var timeoutId;
+        var opponentPlayerName;
+        var opponentPlayerUserId;
+        var opponentTotalMoves;
+        var matchmakingId;
+        const wins = [];
+
+        function redirectToSolitaireee() {
+            sendEventGtag('solitaireee-click');
+            window.open('https://solitaireee.com/', '_blank');
+        }
+
+        function showMultiplayer() {
+            hideItWin();
+            sendEventGtag('show-multiplayer');
+            var attr = $('#oponnent-moves').attr('hidden');
+
+            if (attr === 'hidden') {
+                $("#match-id").text('');
+                $('#playMultiplayer').attr('hidden', true);
+                $('#findOpponent').removeAttr('hidden');
+                $('#oponnent-moves-count').empty().text('0');
+                clearInterval(intervalId);
+                clearTimeout(timeoutId);
+
+                intervalId = 0;
+                timeoutId = 0;
+                opponentPlayerName = '';
+                opponentPlayerUserId = '';
+                opponentTotalMoves = '';
+                matchmakingId = '';
+
+                $('#matchmaking-dialog-solitairen').removeAttr('hidden');
+                $('#matchmaking-lost-dialog-solitairen').attr('hidden', true);
+                $('#matchmaking-title').text('Play Multiplayer');
+                $('#matchmaking-second-title').html('Click <b>Find Opponent</b> to search for a player');
+            }
+        }
+
+        function findOpponent() {
+            $('#matchmaking-second-title').empty();
+            $('#matchmaking-second-title').html('Looking for opponent...');
+            $('#findOpponent').attr('hidden', true);
+
+            setTimeout(() => {
+                $.get("/FindPlayer?game=solitaire", function (data) {
+                    opponentPlayerName = data.displayName;
+                    opponentTotalMoves = data.moves;
+                    opponentPlayerUserId = data.userId;
+
+                    $('#matchmaking-second-title').empty();
+                    $('#matchmaking-second-title').html(`<b>${opponentPlayerName}</b> is ready to play against you! <br> Duel starts in 2 seconds!`);
+                    $('#playMultiplayer').removeAttr('hidden');
+
+                    $('#opponent-player-name').empty().text(opponentPlayerName);
+                    $('#opponent-moves-display-name').empty().text(opponentPlayerName);
+                });
+
+                setTimeout(() => {
+                    playMultiplayer();
+                }, 1500);
+            }, 2000);
+        }
+
+        function closeMatchmakingModal() {
+            $('#matchmaking-dialog-solitairen').attr('hidden', true);
+        }
+
+        function playMultiplayer() {
+            sendEventGtag('play-multiplayer');
+            $('#opponent-moves-display-name').empty().text(opponentPlayerName);
+            $('#oponnent-moves').removeAttr('hidden');
+            $('#matchmaking-dialog-solitairen').attr('hidden', true);
+            $('#oponnent-moves-count').empty().text('0');
+            $('#new-game-end').click();
+
+            $.post("/CreateMatchmaking", { Game: 'solitaire', OpponentPlayerUserId: opponentPlayerUserId, OpponentPlayerMoves: opponentTotalMoves })
+                .done(function (data) {
+                    matchmakingId = data.matchId;
+
+                    $('#match-id').empty().text(matchmakingId);
+                    $('#opponent-player-id').empty().text(opponentPlayerUserId);
+                    $('#opponent-player-moves').empty().text(opponentTotalMoves);
+                });
+
+            intervalId = setInterval(() => {
+                let oponnentMoves = Number($('#oponnent-moves-count').text());
+                let myMoves = Number($('#my-moves').text());
+
+                if (isNaN(oponnentMoves)) {
+                    clearInterval(intervalId);
+                    clearTimeout(timeoutId);
+                } else {
+                    if (oponnentMoves < opponentTotalMoves) {
+                        timeoutId = setTimeout(() => {
+                            oponnentMoves += getRndInteger(1, 3);
+                            $('#oponnent-moves-count').empty().html(oponnentMoves);
+                        }, getRndInteger(1200, 1800));
+                    }
+                }
+            }, 2000);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var lazyloadImages = document.querySelectorAll("img.lazy");
+            var lazyloadThrottleTimeout;
+
+            function lazyload() {
+                if (lazyloadThrottleTimeout) {
+                    clearTimeout(lazyloadThrottleTimeout);
+                }
+
+                lazyloadThrottleTimeout = setTimeout(function () {
+                    var scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function (img) {
+                        if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                        }
+                    });
+                    if (lazyloadImages.length == 0) {
+                        document.removeEventListener("scroll", lazyload);
+                        window.removeEventListener("resize", lazyload);
+                        window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+        });
+
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        function newGame() {
+            const time = $('#display-time > .display-content').text()
+            sendEventGtag(`hy-solitaire-l-${time}`);
+            clearInterval(intervalId);
+            clearTimeout(timeoutId);
+            $("#match-id").text('');
+            $('#matchmaking-lost-dialog-solitairen').attr('hidden', true);
+            $('.start-new').css('pointer-events', 'none');
+            setTimeout(() => {
+                $('.start-new').css('pointer-events', '');
+            }, 3000);
+            const now = new Date();
+            wins.push(now);
+            checkThreeWinsInARow();
+        }
+
+        function clearMultiplayer() {
+            $('#oponnent-moves').attr('hidden', true);
+            $('#matchmaking-lost-dialog-solitairen').attr('hidden', true);
+            $('#oponnent-moves-count').empty().html('tst');
+        }
+
+        function newGameClick() {
+            const time = $('#display-time > .display-content').text()
+            sendEventGtag(`hy-solitaire-w-${time}`);
+            hideItWin();
+            gtag('event', 'conversion', { 'send_to': 'AW-11374734559/fXPICKrXmvQYEN_Z8q8q' });
+            const now = new Date();
+            wins.push(now);
+            checkThreeWinsInARow();
+        }
+
+        function checkThreeWinsInARow() {
+            if (wins.length >= 1) {
+                window.onbeforeunload = null;
+                location.reload();
+            }
+        }
+
+        function startNewGameFromMobile() {
+            $('#playArea').removeAttr('hidden');
+            $('#topBarLeftContainer').removeAttr('hidden');
+            $('#gamewon-img').attr('hidden', true);
+            $('#dummy-update').click();
+            $('#first-game-solitaire').attr('hidden', true);
+            $('#new-game-end-mobile').attr('hidden', true);
+
+            addJsFile('rideordie/solitaire/js/others-solitaire.min1bce.js?v=6');
+
+            $('#stats-game-sol').css({ 'display': 'block' })
+
+            hideItWin();
+        }
+
+        function showMoreReviews() {
+            $('#more-reviews').removeAttr('hidden');
+            $('#view-more').attr('hidden', true);
+        }
+
+        hideIt();
+
+        setTimeout(() => {
+            if (!isMobile()) {
+                $('#stats-game-sol').css({ 'display': 'block' });
+            }
+        }, 3000);
+
+        $(document).ready((function () {
+            var physicalWidth = window.screen.width;
+            var physicalHeight = window.screen.height;
+
+            var scalingFactor = window.devicePixelRatio;
+
+            var scaledWidth = physicalWidth * scalingFactor;
+            var scaledHeight = physicalHeight * scalingFactor;
+
+            sendEventGtag(scaledWidth
+                + 'x' + scaledHeight
+                + '-' + scalingFactor * 100);
+
+            if (isMobile()) {
+                $('#size').attr("hidden", true);
+            }
+            else {
+                setTimeout(() => {
+                    var screenZoom = localStorage.getItem('screen-size');
+
+                    if (screenZoom == null || screenZoom == undefined) {
+                        localStorage.setItem('screen-size', 100);
+                    }
+
+                    screenZoom = parseInt(localStorage.getItem('screen-size'));
+                    $('#playArea').css("zoom", screenZoom + '%');
+                    $('#value-screen').html(screenZoom + '%');
+
+                    if (screenZoom <= 70) {
+                        $('#playArea').addClass("small-padding-top");
+                    }
+                    else {
+                        $('#playArea').removeClass("small-padding-top");
+                    }
+
+                    $('#screen-plus').click(function (e) {
+                        let currentScreenSize = parseInt(localStorage.getItem('screen-size'));
+                        if (currentScreenSize < 100) {
+                            let currenVal = currentScreenSize + 5;
+                            localStorage.setItem('screen-size', currenVal);
+                            $('#value-screen').html(currenVal + '%');
+                            $('#playArea').css("zoom", currenVal + '%');
+                        };
+                        if (currentScreenSize <= 70) {
+                            $('#playArea').addClass("small-padding-top");
+                        }
+                        else {
+                            $('#playArea').removeClass("small-padding-top");
+                        }
+
+                        sendEventGtag('screen-plus: ' + currentScreenSize);
+                    });
+
+                    $('#screen-minus').click(function (e) {
+                        let currentScreenSize = parseInt(localStorage.getItem('screen-size'));
+                        if (currentScreenSize > 20) {
+                            let currenVal = currentScreenSize - 5;
+                            localStorage.setItem('screen-size', currenVal);
+                            $('#value-screen').html(currenVal + '%');
+                            $('#playArea').css("zoom", currenVal + '%');
+                        };
+                        if (currentScreenSize <= 70) {
+                            $('#playArea').addClass("small-padding-top");
+                        }
+                        else {
+                            $('#playArea').removeClass("small-padding-top");
+                        }
+
+                        sendEventGtag('screen-minus: ' + currentScreenSize);
+                    });
+                }, 1500);
+            }
+
+            $.get("/Leaderboard/Wins?game=solitaire", function (data) {
+                $('#user-wins').empty().text(data);
+            });
+
+            $("#draw3").click((function (e) {
+                clearUselessStorage(), nextUrl = solitairenBaseUrl + "solitaire-draw-3", global_game_name = "klondike-3", location.replace(nextUrl)
+            }))
+        }));
+    </script>
+
+</body>
+
+<!-- Mirrored from solitairen.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 00:20:19 GMT -->
+</html>
